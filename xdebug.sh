@@ -18,4 +18,6 @@ echo "xdebug.remote_port = 9000" >> /etc/php5/apache2/php.ini
 echo "xdebug.var_display_max_children = 1024" >> /etc/php5/apache2/php.ini
 echo "xdebug.var_display_max_data = 2048" >> /etc/php5/apache2/php.ini
 echo "xdebug.var_display_max_depth = 30" >> /etc/php5/apache2/php.ini
+echo "xdebug.remote_connect_back = on" >> /etc/php5/apache2/php.ini
+echo "xdebug.idekey = vagrant" >> /etc/php5/apache2/php.ini
 apache2ctl restart
